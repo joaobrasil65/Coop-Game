@@ -29,7 +29,7 @@ ASCharacter::ASCharacter()
 	CameraComp = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComp"));
 	CameraComp->SetupAttachment(SpringArm);
 
-	HealthComp = CreateDefaultSubobject<USHealthComponent>(TEXT("HealthComp"));
+	HealthComponent = CreateDefaultSubobject<USHealthComponent>(TEXT("HealthComp"));
 
 	ZoomedFOV = 45.0f;
 	ZoomInterpSpeed = 20;
@@ -57,7 +57,7 @@ void ASCharacter::BeginPlay()
 		CurrentWeapon->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetNotIncludingScale, WeaponSocketAttachName );
 	}
 
-	HealthComp->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
+	HealthComponent->OnHealthChanged.AddDynamic(this, &ASCharacter::OnHealthChanged);
 	
 }
 
@@ -92,7 +92,7 @@ void ASCharacter::EndCrouch()
 }
 
 void ASCharacter::OnHealthChanged(USHealthComponent* HealthComp, float Health,
-	float HealthDelta, UDamageType* DamageType, AController* InstigatedBy,
+	float HealthDelta, const UDamageType* DamageType, AController* InstigatedBy,
 	AActor* DamageCauser)
 {
 	if (Health <=0 && !bDied)
@@ -104,6 +104,8 @@ void ASCharacter::OnHealthChanged(USHealthComponent* HealthComp, float Health,
 		
 	}
 }
+
+
 
 
 void ASCharacter::StartFire()

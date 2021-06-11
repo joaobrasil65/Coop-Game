@@ -7,6 +7,7 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "SHealthComponent.h"
 
 #include "SCharacter.generated.h"
 
@@ -40,7 +41,7 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
 	USpringArmComponent* SpringArm;
 
-	USHealthComponent* HealthComp;
+	USHealthComponent* HealthComponent;
 
 	bool bWantsToZoom = false;
 
@@ -60,7 +61,7 @@ protected:
 	void EndCrouch();
 
 	UFUNCTION()
-	void OnHealthChanged(USHealthComponent* HealthComp, float Health, float HealthDelta, UDamageType* DamageType, AController* InstigatedBy, AActor* DamageCauser);
+	void OnHealthChanged(USHealthComponent* HealthComp, float Health, float HealthDelta, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
 	ASWeapon* CurrentWeapon;
 
@@ -73,6 +74,7 @@ protected:
 	void StartFire();
 	void StopFire();
 
+	UPROPERTY()
 	bool bDied;
 
 	
