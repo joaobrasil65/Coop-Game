@@ -1,0 +1,24 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-CoopGame-0980.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\CoopGameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\ProjectileWeapon.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SCharacter.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SHealthComponent.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SWeapon.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\CoopGame.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\CoopGameGameModeBase.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\CoopGame.init.gen.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\CoopGameGameModeBase.gen.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\ProjectileWeapon.gen.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SCharacter.gen.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SHealthComponent.gen.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\SWeapon.gen.cpp.obj"
+"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\Default.rc2.res"
+/OUT:"C:\Users\paulb\Documents\Unreal Projects\CoopGame\Intermediate\Build\Win64\UE4Editor\Development\CoopGame\UE4Editor-CoopGame-0980.lib"
+/INCLUDE:IMPLEMENT_MODULE_CoopGame

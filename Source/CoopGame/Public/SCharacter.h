@@ -74,7 +74,7 @@ protected:
 	void StartFire();
 	void StopFire();
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly, Category = "Player")
 	bool bDied;
 
 	

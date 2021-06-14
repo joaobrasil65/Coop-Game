@@ -1,0 +1,2 @@
+[2021-06-14 11:07:38] [ngx::util::setLogFilename:201] Logging to requested file (C:/Users/paulb/Documents/Unreal Projects/CoopGame/Saved/Logs/NGX/NGX_2021.06.14-11.07.37_64321B3F4E5196263D7DC3828A43B327/nvsdk_ngx.log) enabled successfully
+[2021-06-14 11:07:38] [NGXGetPathUsingQAI:127] Path to driverStore found using QAI: C:\WINDOWS\System32\DriverStore\FileRepository\nvddui.inf_amd64_bd45d091e2bce2bd

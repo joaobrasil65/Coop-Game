@@ -120,6 +120,7 @@ void ASWeapon::Fire()
 			{
 				ActualDamage = BaseDamage;
 			}
+			
 			FFloat16 damage = UGameplayStatics::ApplyPointDamage(
 				HitActor, ActualDamage, HitFromDirection, Hit,
 				MyOwner->GetInstigatorController(), this, DamageType);
